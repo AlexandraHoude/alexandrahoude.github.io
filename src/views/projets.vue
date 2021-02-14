@@ -1,6 +1,6 @@
 <template>
   <section class="projet">
-    <h1> Mes Projets </h1>
+    <h1>{{"Projects" | translateTo(language)}}</h1>
 
     <ul class='projets'>
       <li v-for="(projet, i) in projets" :key="i"> <a :href="projet.link" target="_blank"> {{ projet.name }}</a></li>
@@ -10,8 +10,10 @@
 
 </template>
 <script lang="js">
-export default {
+import   {mixinTrad}  from "@/mixins/mixin"
 
+export default {
+  mixins: [mixinTrad],
   name: 'projets',
   data() {
     return {

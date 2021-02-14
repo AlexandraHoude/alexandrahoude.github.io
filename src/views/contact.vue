@@ -1,23 +1,23 @@
 <template lang="html">
   <section class="contact">
-    <h1>{{'contact'}}</h1>
+    <h1>{{'contact' | translateTo(language)}}</h1>
     <form class="form">
       <div  class='item'>
-        <label> {{'nom' }} </label>
+        <label> {{'nom' | translateTo(language)}} </label>
         <input type="text" name="nom"/>
       </div>
       <div  class='item'>
-        <label>{{'prenom'}} </label>
+        <label>{{'prenom' | translateTo(language)}} </label>
         <input type="text" name="prenom"/>
       </div>
       <div  class='item'>
-        <label>{{'courriel'}} </label>
+        <label>{{'courriel' | translateTo(language)}}</label>
         <input type="text" name="courriel"/>
       </div>
       <div  class='item'>
-        <label>{{'categorie'}} </label>
+        <label>{{'categories' | translateTo(language)}}</label>
         <select class="sel" name="categorie">
-          <option v-for="(option, i) in dropdownOptions" :key="i"> {{ option }}</option>
+          <option v-for="(option, i) in dropdownOptions" :key="i"> {{ option | translateTo(language) }}</option>
         </select>
       </div>
     </form>
@@ -26,8 +26,10 @@
 </template>
 
 <script lang="js">
+import   {mixinTrad}  from "@/mixins/mixin";
 
 export default {
+  mixins: [mixinTrad],
   name: 'contact',
   props: [],
   mounted () {
@@ -37,7 +39,7 @@ export default {
       dropdownOptions: [
         "informations",
         "projets",
-        "rendez-vous",
+        "rendezvous",
         "autre"
       ],
     }

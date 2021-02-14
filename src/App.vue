@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Menu/>
     <Header/>
     <router-view />
     <Home/>
@@ -15,10 +16,12 @@
   import "./css/bootstrap.min.css";
   import "./css/font-awesome.min.css";
   import "./css/templatemo-green.css";
+  import Menu from "@/components/Menu";
 
   export default {
     name: 'App',
     components: {
+      Menu,
       Home,
       Header,
       Footer
