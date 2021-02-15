@@ -31,7 +31,6 @@ export const mixinTrad = {
         rendezvous: "rendez-vous",
         autre: "autre",
 
-
     },
 
     filters :{
