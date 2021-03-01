@@ -4,6 +4,7 @@ import Home from "@/views/Home";
 import Contact from "@/views/contact";
 import Projet from '@/views/projets.vue';
 
+// Gestion des routes du site
 const routes = [
     {
         path: '/',

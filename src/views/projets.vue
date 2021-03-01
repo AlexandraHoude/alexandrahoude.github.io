@@ -1,3 +1,4 @@
+<!-- vue des projets -->
 <template>
   <section class="projet">
     <h1>{{"Projects" | translateTo(language)}}</h1>
@@ -6,7 +7,6 @@
       <li v-for="(projet, i) in projets" :key="i"> <a :href="projet.link" target="_blank"> {{ projet.name }}</a></li>
     </ul>
   </section>
-
 
 </template>
 <script lang="js">
@@ -33,7 +33,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-
-</style>

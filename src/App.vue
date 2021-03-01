@@ -1,3 +1,4 @@
+<!-- App -->
 <template>
   <div id="app">
     <Menu/>
@@ -29,6 +30,7 @@
   }
 </script>
 
+<!-- style global -->
 <style>
   #app {
     font-family: Avenir, Helvetica, Arial, sans-serif;

@@ -1,3 +1,4 @@
+<!-- Menu navigation du header -->
 <template>
   <div>
     <div class="navigation">
@@ -15,11 +16,7 @@
 </template>
 
 <script>
-export default {
-name: "Menu"
-}
+  export default {
+    name: "Menu"
+  }
 </script>
-
-<style scoped>
-
-</style>

@@ -5,6 +5,7 @@ export const mixinTrad = {
             language: "french"
         }
     },
+    // Traduction anglaise
     en: {
         Projects: "My Projects",
         contact: "Contact",
@@ -18,7 +19,7 @@ export const mixinTrad = {
         autre: "other",
 
     },
-
+    // Traduction anglaise
     fr: {
         Projects: "Mes Projets",
         contact: "Contact",
@@ -32,7 +33,7 @@ export const mixinTrad = {
         autre: "autre",
 
     },
-
+    // filtre pour faire fonctionner la traduction
     filters :{
         translateTo: function (value, language) {
             if (language==='english'){
@@ -51,6 +52,5 @@ export const mixinTrad = {
                 }
             }
         },
-
     }
 };

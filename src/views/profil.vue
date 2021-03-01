@@ -1,5 +1,5 @@
 <template>
-  <!-- about and skills section -->
+  <!-- Section à propos et compétences -->
   <section class="container">
     <div class="row">
       <div class="col-md-6 col-sm-12">
@@ -35,7 +35,7 @@
     </div>
   </section>
 
-  <!-- education and languages -->
+  <!-- section éducation et langue -->
   <section class="container">
     <div class="row">
       <div class="col-md-8 col-sm-12">
@@ -65,7 +65,7 @@
     </div>
   </section>
 
-  <!-- contact and experience -->
+  <!-- section contact et expérience -->
   <section class="container">
     <div class="row">
       <div class="col-md-4 col-sm-12">
@@ -97,7 +97,3 @@
     name: "Profil",
   }
 </script>
-
-<style scoped>
-
-</style>
